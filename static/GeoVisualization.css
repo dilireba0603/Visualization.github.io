@@ -1,0 +1,195 @@
+html,body{
+  height:100%;
+  width:100%;
+}
+
+/* <!-- 可视化主体模块 start--> */
+
+
+.visualization{
+  background-color: gray;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+
+.visualization .worldMap{
+  background-color: lightblue;
+  width:100%;
+  height:100%;
+
+}
+
+.visualization .detailMes{
+  background-color: #F3F3F3;
+  width:70%;
+  /* margin:100px auto; */
+  /* position:fixed; */
+  position: absolute;
+  left:17%;
+  top:17%;
+  z-index: 1;  
+
+  /* 打开网页后会自动画echarts图，覆盖了底层，需要调整盒子z轴高度 */
+  display:none;
+}
+
+.visualization .detailMes .mesHead{
+  display:flex;
+  padding-left:20px;
+  padding-right:10px;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #FFFFFF;
+  height:30px;
+  cursor:move;
+}
+
+.visualization .detailMes .mesHead p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.visualization .detailMes .mesHead img{
+  width:20px;
+  height:20px;
+  background-repeat: none;
+}
+
+.visualization .detailMes .mesHead img:hover{
+  cursor:pointer;
+  opacity:0.5;
+}
+
+.visualization .detailMes table .tcontent .openButton{
+  width:20px;
+  height:20px;
+  opacity: 1;
+}
+
+.visualization .detailMes table .tcontent .openButton:hover {
+  cursor:pointer;
+  opacity: 0.5;
+}
+
+.visualization .detailMes table{
+  width:80%;
+  margin:30px auto;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.visualization .detailMes table thead{
+  background-color:#C2E4F8 ;
+}
+
+.visualization .detailMes table td{
+  border:1px solid #96C3D2;
+}
+
+
+.visualization .showChooser{
+  width:300px;
+  height:320px;
+  position:fixed;
+  bottom:0;
+  right:0;
+}
+
+.visualization .showChooser .sunburstChoose{
+  /* background-color: tomato; */
+  width:300px;
+  height:300px;
+  border-radius: 150px;
+  position:relative;
+}
+
+.visualization .showChooser .sunburstChoose img{
+  width:20px;
+  height:20px;
+  position:absolute;
+  right:2%;
+}
+
+.visualization .showChooser .sunburstChoose img:hover{
+  cursor:pointer;
+  opacity:0.5;
+}
+
+.visualization .showChooser .sunburstContent{
+  width:300px;
+  height:300px;
+  position:absolute;
+  
+}
+
+.visualization .showChooser .popPlayer{
+  display:flex;
+  justify-content: space-around;
+  /* background-color: green; */
+}
+
+.visualization .showChooser .popPlayer img{
+  width:20px;
+  height:20px;
+  background-repeat: none;
+}
+
+
+.visualization .showChooser .popPlayer img:hover{
+  cursor:pointer;
+  opacity:0.5;
+}
+
+.visualization #chartContainer {
+
+  background-color: #F3F3F3;
+  width:50%;
+  height: 75%;
+  /* margin:80px auto; */
+  /* position:fixed; */
+  position: absolute;
+  left:27%;
+  top:10%;
+  z-index: 2;  
+  display:none;
+  /* 打开网页后会自动画echarts图，覆盖了底层，需要调整盒子z轴高度 */
+
+}
+
+.visualization #chartContainer #chartHeader{
+  display:flex;
+  padding-left:20px;
+  padding-right:10px;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #FFFFFF;
+  height:30px;
+  cursor:move;
+}
+
+.visualization #chartContainer #chart {
+  width:95%;
+  height: 95%;
+  margin:20px 20px;
+  position: absolute;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.visualization #chartContainer #chartHeader #closeButton {
+  position: absolute;
+  width:20px;
+  height:20px;
+  right:2%;
+}
+
+.visualization #chartContainer #chartHeader #closeButton:hover{
+  cursor:pointer;
+  opacity:0.5;
+}
+
+
+/* <!-- 可视化主体模块 endt--> */
